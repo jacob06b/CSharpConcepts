@@ -1,4 +1,5 @@
-﻿using CSharpConcepts.Classes.Examples;
+﻿using System.Diagnostics;
+using CSharpConcepts.Classes.Examples;
 using CSharpConcepts.Classes.Exercises;
 
 namespace CSharpConcepts
@@ -8,7 +9,10 @@ namespace CSharpConcepts
         static void Main(string[] args)
         {
             CallTypeExamples();
-            // CallTypeExercises();
+            //CallTypeExercises();
+
+            //CallSelectionExamples();
+            //CallSelectionExercises();
         }
 
         static void CallTypeExamples()
@@ -51,6 +55,42 @@ namespace CSharpConcepts
             Console.WriteLine();
 
             // Add your own calling code here for the other questions
+        }
+
+        static void CallSelectionExamples()
+        {
+            Console.WriteLine("# Assign Letter Grade");
+            string grade = SelectionExamples.AssignLetterGrade(90);
+            Console.WriteLine($"Your grade was a {grade}");
+            // Can use Debug.Assert to check return values
+            Debug.Assert(SelectionExamples.AssignLetterGrade(70) == "Merit", "Merit expected");
+            Console.WriteLine();
+
+            Console.WriteLine("# Conditional Operations");
+            SelectionExamples.ConditionalOperations(false, true);
+            Console.WriteLine();
+
+            Console.WriteLine("# Lift Takeoff");
+            string message = SelectionExamples.LiftTakeoff(5, 142d);
+            Console.WriteLine(message);
+            Console.WriteLine();
+
+            Console.WriteLine("# Determine tip");
+            decimal tip = SelectionExamples.DetermineTip("Good");
+            Console.WriteLine($"The tip will be {tip}");
+            Console.WriteLine();
+
+            Console.WriteLine("# Determine tip with enum");
+            decimal tip2 = SelectionExamples.DetermineTip(SelectionExamples.ServiceLevel.Ok);
+            Console.WriteLine($"The tip will be {tip2}");
+            Console.WriteLine();
+
+
+        }
+
+        static void CallSelectionExercises()
+        {
+          // Add your own calling code here for the selection questions
         }
     }
 }

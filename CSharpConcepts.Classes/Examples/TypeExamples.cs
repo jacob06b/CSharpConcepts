@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharpConcepts.Classes.Examples
 {
-    public class TypeExamples
+    public static class TypeExamples
     {
         public static void DeclaringNumericTypes()
         {
@@ -58,7 +58,7 @@ namespace CSharpConcepts.Classes.Examples
         {
             // We can''t just cast a string to a double (double)value won't work
 
-            if (Double.TryParse(value, out double num))
+            if (double.TryParse(value, out double num))
             {
                 Console.WriteLine($"Converted {value} to {num}");
             }
@@ -87,9 +87,8 @@ namespace CSharpConcepts.Classes.Examples
         public static House SortingHat()
         {
             Random random = new Random();
-            int choice = random.Next(0, 4);
-            // Converts the number to the houses enum
-            House hogwartsHouse = (House)choice;
+            int choice = random.Next(0, 4);            
+            House hogwartsHouse = (House)choice; // Converts the number to the house enum
             return hogwartsHouse;
         }
 

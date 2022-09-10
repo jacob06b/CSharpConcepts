@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharpConcepts.Classes.Exercises
 {
-    public class TypeExercises
+    public static class TypeExercises
     {
         // Q1: Calculator 1
         // Write to the console correctly the results of: +. - , *, /
@@ -14,7 +14,6 @@ namespace CSharpConcepts.Classes.Exercises
         {
             throw new NotImplementedException();    
         }
-
 
         // Q2: Calculator 2
         // Try to convert both the values to a double and write to the console the results of: +. - , *, /
@@ -43,18 +42,8 @@ namespace CSharpConcepts.Classes.Exercises
         {
             throw new NotImplementedException();
         }
-
-
-        // Q6: FizzBuzz
-        // Return Fizz if divisible by 3. Buzz if divisible by 5. FizzBuzz if divisible by both.
-        // If divisible by neither return the number itself (as a string)
-        public static string FizzBuzz(int num)
-        {
-            throw new NotImplementedException();
-        }
-
         
-        // Q7: Languages
+        // Q6: Languages
         // Using the enum below write a program that will convert the proposed language to the enum if availabe
         // Otherwise it should randomly assign a language
         public enum Language
