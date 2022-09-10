@@ -2,7 +2,7 @@
 
 ### 1. Type Exercises<br>
 Complete the exercises in TypeExercises.cs<br>
-Add code to call and test your subprograms in Program.<br>
+Add code to call and test your subprograms in Program.cs<br>
 Extension: Q1 from https://olympiad.org.uk/papers/2000/bio/bio2kex.pdf<br>
 Extension: Q1 from https://olympiad.org.uk/papers/2002/bio/bio02ex.pdf<br>
 
