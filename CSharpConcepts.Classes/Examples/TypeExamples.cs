@@ -50,7 +50,7 @@ namespace CSharpConcepts.Classes.Examples
 
             // Dividing integers B
             numC = numA / (double)numB;
-            Console.WriteLine($"When one number is converted to a float: {numA} / {(double)numB} is {numC}.");
+            Console.WriteLine($"When one number is converted to a double: {numA} / {(double)numB} is {numC}.");
         }
 
 
@@ -60,18 +60,18 @@ namespace CSharpConcepts.Classes.Examples
 
             if (double.TryParse(value, out double num))
             {
-                Console.WriteLine($"Converted {value} to {num}");
+                Console.WriteLine($"Converted {value} to {num} using TryParse");
             }
             else
             {
                 Console.WriteLine($"Could not convert {value} to a double");
             }
 
-            double num2 = Double.Parse(value);
-            Console.WriteLine($"Converted {value} to {num2}");
+            double num2 = double.Parse(value);
+            Console.WriteLine($"Converted {value} to {num2} using Parse");
 
             double num3 = Convert.ToDouble(value);
-            Console.WriteLine($"Converted {value} to {num3}");
+            Console.WriteLine($"Converted {value} to {num3} using Convert");
         }          
 
 
