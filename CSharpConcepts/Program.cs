@@ -7,7 +7,7 @@
             //Calls the example code
             //Examples.Run();
 
-            // Calls the exercises code
+            //Calls the exercises code
             Exercises.Run();
         }
 

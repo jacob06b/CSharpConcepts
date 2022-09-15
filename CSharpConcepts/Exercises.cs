@@ -21,7 +21,7 @@ namespace CSharpConcepts
             // Add your calling code here for the questions an example is below
 
             Console.WriteLine("# Calculator");
-            TypeExercises.Calculator(12, 5);
+            TypeExercises.Calculator("12", "5");
             Console.WriteLine();
         }
 

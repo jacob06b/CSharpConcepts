@@ -26,7 +26,11 @@ namespace CSharpConcepts.Classes.Exercises
         // Try to convert both the values to a double and write to the console the results of: +. - , *, /
         public static void Calculator(string value1, string value2)
         {
-            throw new NotImplementedException();
+            double.Parse(value1);
+            double.Parse(value2);
+            Console.WriteLine(value1);
+            Console.WriteLine(value2);
+
         }
 
         // Q3: Binary Strings
