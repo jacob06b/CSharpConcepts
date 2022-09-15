@@ -20,9 +20,9 @@ namespace CSharpConcepts
         {
             // Add your calling code here for the questions an example is below
 
-            //Console.WriteLine("# Calculator");
-            //TypeExercises.Calculator(12, 5);
-            //Console.WriteLine();
+            Console.WriteLine("# Calculator");
+            TypeExercises.Calculator(12, 5);
+            Console.WriteLine();
         }
 
         private static void CallSelectionExercises()

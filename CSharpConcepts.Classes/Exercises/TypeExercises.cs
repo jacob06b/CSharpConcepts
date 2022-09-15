@@ -12,7 +12,14 @@ namespace CSharpConcepts.Classes.Exercises
         // Write to the console correctly the results of: +. - , *, /
         public static void Calculator(int num1, int num2)
         {
-            throw new NotImplementedException();    
+            int addition = num1 + num2;
+            int multiplication = num1 * num2;
+            int subtraction = num1 - num2;
+            double division = num1 / num2;
+            Console.WriteLine($"The two numbers added together ={addition}");
+            Console.WriteLine($"The two numbers multiplied together together ={multiplication}");
+            Console.WriteLine($"The first number minus the second number ={subtraction}");
+            Console.WriteLine($"The first number divided by the second number ={division}");
         }
 
         // Q2: Calculator 2
