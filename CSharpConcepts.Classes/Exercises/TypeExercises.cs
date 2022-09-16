@@ -26,18 +26,29 @@ namespace CSharpConcepts.Classes.Exercises
         // Try to convert both the values to a double and write to the console the results of: +. - , *, /
         public static void Calculator(string value1, string value2)
         {
-            double.Parse(value1);
-            double.Parse(value2);
-            Console.WriteLine(value1);
-            Console.WriteLine(value2);
-
+            double newvalue1 = double.Parse(value1);
+            double newvalue2 = double.Parse(value2);
+            double addition = newvalue1 + newvalue2;
+            double multiplication = newvalue1 * newvalue2;
+            double subtraction = newvalue1 - newvalue2;
+            double division = newvalue1 / newvalue2;
+            Console.WriteLine($"The two numbers added together ={addition}");
+            Console.WriteLine($"The two numbers multiplied together together ={multiplication}");
+            Console.WriteLine($"The first number minus the second number ={subtraction}");
+            Console.WriteLine($"The first number divided by the second number ={division}");
         }
 
         // Q3: Binary Strings
         // Write to the console the number printed in Binary, Decimal and Hex formats
         public static void BinaryStrings(int num)
         {
-            throw new NotImplementedException();
+            String BinNum = Convert.ToString(num, 2);
+            Decimal DecNum = Convert.ToDecimal(num);
+            String HexNum = Convert.ToString(num, 16);
+            Console.WriteLine(BinNum);
+            Console.WriteLine(DecNum);
+            Console.WriteLine(HexNum);
+
         }
 
         // Q4: BMI
