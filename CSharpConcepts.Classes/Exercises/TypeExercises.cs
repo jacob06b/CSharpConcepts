@@ -57,14 +57,26 @@ namespace CSharpConcepts.Classes.Exercises
         {
             double bmi = height / (weight * weight);
             Console.WriteLine($"The BMI is {bmi}");
-            return bmi
+            return bmi;
         }
 
         // Q5: FutureDate
         // Write to the console today's date. Return the date that it will be when the days passed in are added to the current date. 
-        public static DateTime FutureDate(int days)
+        public static string FutureDate(int days)
         {
-            throw new NotImplementedException();
+            String monthNum = DateTime.Now.ToString("MM");
+            String dayNum = DateTime.Now.ToString("dd");
+            int futureday = int.Parse(dayNum) + (days);
+            while (futureday > 30)
+            { monthNum = monthNum + 1;
+            futureday = futureday - 30; 
+            }
+            string dateFuture = (futureday + "/" + monthNum);
+            Console.WriteLine(dateFuture);
+            return dateFuture;
+            
+
+
         }
         
         // Q6: Languages

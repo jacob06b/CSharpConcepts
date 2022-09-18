@@ -20,8 +20,8 @@ namespace CSharpConcepts
         {
             // Add your calling code here for the questions an example is below
 
-            Console.WriteLine("#BMIcalculator");
-            TypeExercises.BMICalculator(172.9, 63.4);
+            Console.WriteLine("# FutureDate");
+            TypeExercises.FutureDate(15);
             Console.WriteLine();
         }
 
