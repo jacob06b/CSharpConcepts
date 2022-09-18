@@ -55,7 +55,9 @@ namespace CSharpConcepts.Classes.Exercises
         // Calculate and return the BMI - Body mass index
         public static double BMICalculator(double height, double weight)
         {
-            throw new NotImplementedException();
+            double bmi = height / (weight * weight);
+            Console.WriteLine($"The BMI is {bmi}");
+            return bmi
         }
 
         // Q5: FutureDate
