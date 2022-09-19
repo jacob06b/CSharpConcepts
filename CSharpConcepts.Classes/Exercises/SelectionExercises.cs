@@ -8,20 +8,75 @@ namespace CSharpConcepts.Classes.Exercises
 {
     public static class SelectionExercises
     {
+ 
+
         // Q1: FizzBuzz
         // Return Fizz if divisible by 3. Buzz if divisible by 5. FizzBuzz if divisible by both.
         // If divisible by neither return the number itself (as a string)
-        public static string FizzBuzz(int num)
-        {
-            throw new NotImplementedException();
-        }
-
+//            public static string FizzBuzz(int num)
+//        {
+//            bool fizzcheck = false;
+//            bool buzzcheck = false;
+//            int div3 = num % 3;
+//            int div5 = num % 5;
+//            if (div3 == 0)
+//            {
+//                bool fizzcheck = true;
+//            }
+//            else
+//            {
+//                bool fizzcheck = false;
+//            }
+//            if (div5 == 0)
+//            {
+//                bool buzzcheck = true;
+//            }
+//            else
+//            {
+//                bool buzzcheck = false;
+//            }
+//            if (fizzcheck == true)
+//            {
+//                if (buzzcheck == true)
+//                {
+//                    Console.WriteLine("FizzBuzz");
+//                }
+//                else
+//                {
+//                    Console.WriteLine("Fizz");
+//                }
+//            }
+//            else if (buzzcheck == true)
+//            {
+//                Console.WriteLine("Buzz");
+//            }
+//            else
+//            {
+//                Console.WriteLine(num);
+//            }
+//        }
+//
         // Q2: Vowel or Consonant
         // Using a switch statement write a function which returns true if the input is a vowel and
         // false if it is a consonant
         public static bool VowelOrConsonant(char letter)
         {
-            throw new NotImplementedException();
+            string stringletter = letter.ToString();
+            if (stringletter == "a"
+                || stringletter == "e"
+                || stringletter == "i"
+                || stringletter == "o"
+                || stringletter == "u")
+            {
+                Console.WriteLine("True");
+                return true;
+            }
+            else
+            {
+                Console.WriteLine("False");
+                return false;
+            }
+            
         }
 
         // Q3: DiceRoller
