@@ -7,8 +7,22 @@ namespace CSharpConcepts
     {
         internal static void Run()
         {
-            CallTypeExamples();
-            CallSelectionExamples();
+           // CallTypeExamples();
+           // CallSelectionExamples();
+            CallIterationExamples();
+        }
+
+        private static void CallIterationExamples()
+        {
+            string greeting = IterationExamples.BirthdayGreeting();
+            Console.WriteLine(greeting);
+
+            int sum = IterationExamples.Sum();
+            Console.WriteLine(sum);
+
+            double[] squareNumbers = IterationExamples.SquaredNumbers();
+            string squareNumbersOutput = string.Join(",", squareNumbers);
+            Console.WriteLine(squareNumbersOutput);
         }
 
         private static void CallTypeExamples()
