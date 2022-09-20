@@ -12,7 +12,7 @@ namespace CSharpConcepts.Classes.Examples
         // In Count controlled or definite iteration
         // The statement is repeated a specific number of times
 
-        // For loop examples
+        // Basic for loop
         public static int Sum(int n)
         {
             int total = 0;
@@ -22,18 +22,9 @@ namespace CSharpConcepts.Classes.Examples
             }
             return total;
         }
-        public static int Sum(int n, int step)
-        {
-            int total = 0;
-            for (int i = 0; i <= n; i+=step)
-            {
-                total += n;
-            }
-            return total;
-        }
 
-        // For each examples
-        public static int Sum()
+        // For each example with int array
+        public static int SumNumbers()
         {
             int[] numbers = { 5, 2, 3, 6, 7, 8 };
             int total = 0;
@@ -44,7 +35,7 @@ namespace CSharpConcepts.Classes.Examples
             return total;
         }
 
-        // For each examples
+        // For each example with string array
         public static string BirthdayGreeting()
         {
             string[] names = { "Bob", "Jane", "Kevin", "Fred"};
@@ -76,6 +67,42 @@ namespace CSharpConcepts.Classes.Examples
              }
              return numbers;
          }*/
+
+        // Nested for loop
+        public static void NestedForLoop()
+        {
+
+        }
+        #endregion
+
+        #region Condition Controlled
+        public static void CakesEaten(int cakeNumber)
+        {
+            while (cakeNumber > 0)
+            {
+                Console.WriteLine($"{cakeNumber} cakes");
+                cakeNumber--;
+            }
+            Console.WriteLine("No cakes left");
+        }
+
+        // Please note that user input really should not be taken from a subprogram in a class library
+        // However I wanted to give an example of where you might use a do-while loop whilst keeping all the example code together.
+        public static void ValidateNumberEntry()
+        {
+            int numberEntered = 0;
+            do
+            {
+                Console.WriteLine($"Please enter a whole number between 1 and 50");
+                string value = Console.ReadLine() ?? "";
+                if (int.TryParse(value, out int number))
+                {
+                    numberEntered = number;
+                }
+
+            } while (numberEntered < 1 || numberEntered > 50);
+            Console.WriteLine($"You entered {numberEntered}");
+        }
         #endregion
 
     }

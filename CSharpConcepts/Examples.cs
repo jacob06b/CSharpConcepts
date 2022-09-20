@@ -7,9 +7,21 @@ namespace CSharpConcepts
     {
         internal static void Run()
         {
-           // CallTypeExamples();
-           // CallSelectionExamples();
+            // CallTypeExamples();
+            // CallSelectionExamples();
             CallIterationExamples();
+            // CallMathsExamples();
+        }
+
+        private static void CallMathsExamples()
+        {
+            MathsExamples.Rounding();
+            Console.WriteLine();
+
+            MathsExamples.DifferentRoundingOptions(12.5);
+            Console.WriteLine();
+            MathsExamples.DifferentRoundingOptions(-12.5);
+            Console.WriteLine();
         }
 
         private static void CallIterationExamples()
@@ -17,12 +29,16 @@ namespace CSharpConcepts
             string greeting = IterationExamples.BirthdayGreeting();
             Console.WriteLine(greeting);
 
-            int sum = IterationExamples.Sum();
+            int sum = IterationExamples.SumNumbers();
             Console.WriteLine(sum);
 
             double[] squareNumbers = IterationExamples.SquaredNumbers();
             string squareNumbersOutput = string.Join(",", squareNumbers);
             Console.WriteLine(squareNumbersOutput);
+
+            IterationExamples.CakesEaten(10);
+
+            IterationExamples.ValidateNumberEntry();
         }
 
         private static void CallTypeExamples()
