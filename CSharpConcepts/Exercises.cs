@@ -21,7 +21,7 @@ namespace CSharpConcepts
             // Add your calling code here for the questions an example is below
 
             Console.WriteLine("# VowelOrConsonant");
-            SelectionExercises.VowelOrConsonant(b);
+            SelectionExercises.DiceRoller();
             Console.WriteLine();
         }
 

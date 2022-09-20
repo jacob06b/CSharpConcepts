@@ -84,7 +84,36 @@ namespace CSharpConcepts.Classes.Exercises
         // If all three dice have the same value write, "Three of a kind"
         // If two of the dice have the same value write, "You have a pair!
         // Otherwise write, "Sorry you lose
-
+        public static int DiceRoller()
+        {
+            Random rnd = new Random();
+            int die1 = rnd.Next(1, 7);
+            int die2 = rnd.Next(1, 7);
+            int die3 = rnd.Next(1, 7);
+            Console.WriteLine(die1);
+            Console.WriteLine(die2);
+            Console.WriteLine(die3);
+            if (die1 == die2)
+            {
+                if (die1 == die3)
+                {
+                    Console.WriteLine("Three of a kind");
+                }
+                else
+                {
+                    Console.WriteLine("You have a pair!");
+                }
+            }
+            else if (die2 == die3)
+            {
+                Console.WriteLine("You have a pair!");
+            }
+            else
+            {
+                Console.WriteLine("Sorry, you lose!");
+            }
+            return die1;
+        }  
         // Q4: Angles
         // Write a function to return whether the angle input is acute, right angle, obtuse, straight or reflex
         // Use an enum for the different angle types
