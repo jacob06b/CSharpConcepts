@@ -26,19 +26,29 @@ namespace CSharpConcepts
 
         private static void CallIterationExamples()
         {
-            string greeting = IterationExamples.BirthdayGreeting();
-            Console.WriteLine(greeting);
+            //string greeting = IterationExamples.BirthdayGreeting();
+            //Console.WriteLine(greeting);
 
-            int sum = IterationExamples.SumNumbers();
-            Console.WriteLine(sum);
+            //int sum = IterationExamples.SumNumbers();
+            //Console.WriteLine(sum);
 
-            double[] squareNumbers = IterationExamples.SquaredNumbers();
-            string squareNumbersOutput = string.Join(",", squareNumbers);
-            Console.WriteLine(squareNumbersOutput);
+            //double[] squareNumbers = IterationExamples.SquaredNumbers();
+            //string squareNumbersOutput = string.Join(",", squareNumbers);
+            //Console.WriteLine(squareNumbersOutput);
 
-            IterationExamples.CakesEaten(10);
+            //IterationExamples.CakesEaten(10);
 
-            IterationExamples.ValidateNumberEntry();
+            //IterationExamples.ValidateNumberEntry();
+
+            int[][] testScores = new int[][]
+            {
+                new int[] { 1, 3, 5, 7, 9 },
+                new int[] { 0, 2, 4, 6 },
+                new int[] { 11, 22 }
+            };
+            int[] totalTestScores = IterationExamples.FindTotalTestScore(testScores);
+            string totalTestScoreOutput = string.Join(", ", totalTestScores);
+            Console.WriteLine($"Total test scores are {totalTestScoreOutput}");
         }
 
         private static void CallTypeExamples()

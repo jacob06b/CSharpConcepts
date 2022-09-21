@@ -69,9 +69,18 @@ namespace CSharpConcepts.Classes.Examples
          }*/
 
         // Nested for loop
-        public static void NestedForLoop()
-        {
-
+        public static int[] FindTotalTestScore(int[][] testScores)
+        {        
+            int[] totalScores = new int[testScores.Length];
+            for (int i=0; i<testScores.Length; i++)
+            {
+                totalScores[i] = 0;
+                for (int j=0; j<testScores[i].Length; j++)
+                {
+                    totalScores[i] += testScores[i][j];
+                }
+            }
+            return totalScores;
         }
         #endregion
 
