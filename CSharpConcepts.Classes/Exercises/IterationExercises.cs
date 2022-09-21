@@ -10,24 +10,23 @@ namespace CSharpConcepts.Classes.Exercises
     {
         // Q1: Centuries
         // Calculate the number of times a batter scored a century (100 runs) or more in a match
-        public static int NumberOfCenturiesScored(int[] runsScored)
+        public static int NumberOfCenturiesScored(List<int> runsScored)
         {
             throw new NotImplementedException();
         }
 
         // Q2: Batting Average
         // Calculate the batting average.
-        // Exclude any values where the runs scored is null.
-        // A null value indicates that they did not bat in that match.
-        public static double BattingAverage(int?[] runsScored)
+        // Exclude any values where the runs scored were negative as a negative value indicates that they did not bat in that match.
+        public static double BattingAverage(List<int> runsScored)
         {
-            throw new NotImplementedException();
+           throw new NotImplementedException();
         }
 
         // Q3: User Names
         // Determine the user names
-        // It will be the first three characters of their name and a number, which will be the order of the name in the array.
-        public static string[] UserNames(string[] names)
+        // It will be the first three characters of their name and a number, which will be the order of the name in the list.
+        public static List<string> UserNames(List<string> names)
         {
             throw new NotImplementedException();
         }
@@ -35,7 +34,7 @@ namespace CSharpConcepts.Classes.Exercises
         // Q4: Calculate Multiples
         // Write a function that will output the multiple of a number from 1 to the max number specified
         // So called with 6 and 10 it would output [6, 12, 18, 24, 30, 36, 42, 48, 54, 50]
-        public static int[] CalculateMultiples(int number, int maximumMultiple)
+        public static List<int> CalculateMultiples(int number, int maximumMultiple)
         {
             throw new NotImplementedException();
         }
@@ -60,17 +59,17 @@ namespace CSharpConcepts.Classes.Exercises
         //**
         //*
 
-        // Q7: This function should take a noughts and crosses board represented as an two dimensional char array,
+        // Q7: This function should take a noughts and crosses board represented as an character list,
         // A space represents an empty space as shown below.
 
-        //char[,] board = new char[3, 3]
-        //  {
-        //        { 'X', '0', 'X'  },
-        //        { ' ', '0', ' '  },
-        //        { 'X', '0', ' '  }
-        //  };
+       /* List<List<char>> board = new()
+        {
+            new() { 'X', '0', 'X' },
+            new() { ' ', '0', ' ' },
+            new() { 'X', '0', ' ' }
+        };*/
 
-        // The function should return a char: "X" if player X has won, "0" if the player 0 has won,
-        // and " " if there is currently no winner.
+        // The function should return a char: 'X' if player X has won, '0' if the player 0 has won,
+        // and ' ' if there is currently no winner.
     }
 }

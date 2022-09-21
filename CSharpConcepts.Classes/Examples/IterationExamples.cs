@@ -18,15 +18,15 @@ namespace CSharpConcepts.Classes.Examples
             int total = 0;
             for (int i=0; i <= n; i++)
             {
-                total += n;
+                total += i;
             }
             return total;
         }
 
-        // For each example with int array
+        // For each example with int list
         public static int SumNumbers()
         {
-            int[] numbers = { 5, 2, 3, 6, 7, 8 };
+            List<int> numbers = new() { 5, 2, 3, 6, 7, 8 };
             int total = 0;
             foreach (int num in numbers)
             {
@@ -35,10 +35,10 @@ namespace CSharpConcepts.Classes.Examples
             return total;
         }
 
-        // For each example with string array
+        // For each example with string list
         public static string BirthdayGreeting()
         {
-            string[] names = { "Bob", "Jane", "Kevin", "Fred"};
+            List<string> names = new() { "Bob", "Jane", "Kevin", "Fred"};
             string greeting = "Happy birthday to ";
             foreach (string name in names)
             {
@@ -49,33 +49,31 @@ namespace CSharpConcepts.Classes.Examples
 
         // For loop versus a foreach loop
         // In a foreach loop the loop variable is read only and cannot be changed
-        public static double[] SquaredNumbers()
+        public static List<double> SquaredNumbers(List<double> numbers)
         {
-            double[] numbers = { 9, 12, 3, 7, 17 };
-            for (int i=0; i < numbers.Length; i++)
+            for (int i=0; i < numbers.Count; i++)
             {
                 numbers[i] = Math.Pow(numbers[i], 2);
             }
             return numbers;
         }
-        /* public static double[] SquaredNumbersWithForeach()
-         {
-             double[] numbers = { 9, 12, 3, 7, 17 };
-             foreach (double num in numbers)
-             {
-                 num = Math.Pow(num, 2);
-             }
-             return numbers;
-         }*/
+        /*public static List<double> SquaredNumbersUsingForEach(List<double> numbers)
+        {
+            foreach (double num in numbers)
+            {
+                num = Math.Pow(num, 2);
+            }
+            return numbers;
+        }*/
 
         // Nested for loop
-        public static int[] FindTotalTestScore(int[][] testScores)
+        public static List<int> FindTotalTestScore(List<List<int>> testScores)
         {        
-            int[] totalScores = new int[testScores.Length];
-            for (int i=0; i<testScores.Length; i++)
+            List<int> totalScores = new();
+            for (int i=0; i<testScores.Count; i++)
             {
-                totalScores[i] = 0;
-                for (int j=0; j<testScores[i].Length; j++)
+                totalScores.Add(0);
+                for (int j=0; j<testScores[i].Count; j++)
                 {
                     totalScores[i] += testScores[i][j];
                 }
@@ -96,7 +94,7 @@ namespace CSharpConcepts.Classes.Examples
         }
 
         // Please note that user input really should not be taken from a subprogram in a class library
-        // However I wanted to give an example of where you might use a do-while loop whilst keeping all the example code together.
+        // However, I wanted to give an example of where you might use a do-while loop whilst keeping all the example code together.
         public static void ValidateNumberEntry()
         {
             int numberEntered = 0;
@@ -113,6 +111,5 @@ namespace CSharpConcepts.Classes.Examples
             Console.WriteLine($"You entered {numberEntered}");
         }
         #endregion
-
     }
 }
