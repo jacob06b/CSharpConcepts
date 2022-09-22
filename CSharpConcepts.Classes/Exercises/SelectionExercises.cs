@@ -120,23 +120,47 @@ namespace CSharpConcepts.Classes.Exercises
         public enum AngleSizes
         {
             Acute,
+            Obtuse,
             RightAngle,
             Straight,
-            Obtuse,
             Reflex
         }
-        public static string Angles(int angle);
+
+        public static int AngleDeterminer(int Angles)
         {
-            int angleNum;
-            switch (angle)
+            int angle;
+            switch (Angles)
             {
+                case "acute":
+                    angle < 90;
+                    break;
+                case "right angle":
+                    angle = 90;
+                    break;
+                case "straight":
+                    angle = 180;
+                    break;
+                case "obtuse":
+                    angle < 180 && angle > 90;
+                    break;
+                case "reflex":
+                    angle > 180;
+                    break;
+                default:
+                    angle = 0;
+                    break;
             }
+            return angle;
         }
-        // Q5: Rock, Paper Scissors
-        // Write a procedure which takes the user's choice as input and randomly generate the computer's choice
-        // It should write the computer's choice to the console and write whether the user lost, won, or drew.
-        // Handle the user input in the calling code in Program.cs
-        public static string rpc(string choice)
+    }
+        }
+// Q5: Rock, Paper Scissors
+// Write a procedure which takes the user's choice as input and randomly generate the computer's choice
+// It should write the computer's choice to the console and write whether the user lost, won, or drew.
+// Handle the user input in the calling code in Program.cs
+public static string rpc(string choice)
+{
+}
         
         // Q6: Triangle
         // Write a function that takes in three side lengths.
