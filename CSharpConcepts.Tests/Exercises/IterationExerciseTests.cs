@@ -8,7 +8,7 @@ namespace CSharpConcepts.Tests.Exercises
     public class IterationExerciseTests
     {
 
-        [TestMethod]
+[TestMethod]
         public void TestNumberOfCenturies()
         {
             List<int> input = new() { 12, 5, -1, 100, 11, 22, 55, 17, 23, -1, 66, 100, 6, 100, 0 };
