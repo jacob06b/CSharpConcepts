@@ -123,28 +123,17 @@ namespace CSharpConcepts.Classes.Exercises
             }
         }
 
-        //*
-        //**
-        //***
-        //****
-        //*****
-        //******
-        //*****
-        //****
-        //***
-        //**
-        //*
 
         // Q7: This function should take a noughts and crosses board represented as an character list,
         // A space represents an empty space as shown below.
 
-       /* List<List<char>> board = new()
+        List<List<char>> board = new()
         {
             new() { 'X', '0', 'X' },
             new() { ' ', '0', ' ' },
             new() { 'X', '0', ' ' }
-        };*/
-
+        };
+        
         // The function should return a char: 'X' if player X has won, '0' if the player 0 has won,
         // and ' ' if there is currently no winner.
     }
